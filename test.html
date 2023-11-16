@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prinu Vinod - Skills</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HTML5 website template">
+    <meta name="keywords" content="global, template, html, sass, jquery">
+    <meta name="author" content="Bucky Maler">
+
+    <!-- Include the existing stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link href="assets/img/logo.png" rel="icon">
+</head>
+
+<body>
+
+    <!-- Add your skills section here with progress bars -->
+    <div class="section">
+        <h2>My Skills</h2>
+        <div class="progress-bar">
+            <p>HTML &amp; CSS</p>
+            <div class="progress">
+                <div class="progress-bar-fill" style="width: 90%;"></div>
+            </div>
+            <p>JavaScript</p>
+            <div class="progress">
+                <div class="progress-bar-fill" style="width: 80%;"></div>
+            </div>
+            <!-- Add more skills and progress bars as needed -->
+        </div>
+    </div>
+
+    <!-- Include the existing JavaScript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+    <script src="assets/js/functions-min.js"></script>
+    <script>
+        // JavaScript code to update the number of happy clients
+        let happyClients = 0;
+        const targetClients = 100; // Set your target number of happy clients here
+        const increment = 1; // Set the increment value
+
+        function updateHappyClients() {
+            if (happyClients < targetClients) {
+                happyClients += increment;
+                document.getElementById("happy-clients").textContent = happyClients;
+                requestAnimationFrame(updateHappyClients);
+            } else {
+                document.getElementById("happy-clients").textContent = targetClients;
+            }
+        }
+
+        // Start updating the number of happy clients
+        updateHappyClients();
+    </script>
+</body>
+
+</html>

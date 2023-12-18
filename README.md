@@ -3,7 +3,7 @@ Welcome to my portfolio website repository! This website showcases my projects, 
 
 ## Demo
 You can access the live version of my portfolio website from below.<br>
-[<img src="logo.png" width="90" title="My Website">](https://prinuvinod.github.io/My-Website/)
+[<img src="logo.png" width="90" title="My Website">](https://prinuvinod.me)
 
 ## Created Using
 > FrontEnd > ***HTML***, ***CSS*** <br>

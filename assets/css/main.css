@@ -1270,7 +1270,6 @@ body {
   display: flex;
   width: 700px;
   max-width: 75%;
-  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1281,6 +1280,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
+  border-style: none;
 }
 @media (max-width: 1180px) {
   .hire {

@@ -1631,3 +1631,59 @@ body {
   -webkit-transition-delay: 0.16s;
   transition-delay: 0.16s;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .work-request--options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .options-a,
+  .options-b {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .work-request--information {
+    flex-direction: column;
+  }
+
+  .projectcompleted {
+    width: 300px;
+  }
+
+  .hoursos {
+    width: 300px;
+    margin-top: 30px;
+  }
+
+  .frontend{
+    width: 300px;
+  }
+}
+
+.frontend:hover, .nodejs:hover, .mongodb:hover, .cprog:hover, .python:hover, .coms:hover, .marketing:hover, .firebase:hover {
+  background-color: #0f33ff;
+  border-color: #0f33ff;
+}
+
+/* Add this CSS to your stylesheet */
+
+label {
+  width: 100%;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+
+  /* Initial state - no transformation */
+  transform: scale(1);
+}
+
+label:hover {
+  transform: scale(1.1); /* Scale the label on hover */
+}
+

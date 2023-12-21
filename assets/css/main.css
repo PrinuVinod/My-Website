@@ -1736,3 +1736,29 @@ label:hover {
     margin-bottom: 0;
   }
 }
+
+/* Mobile View Styles for home */
+@media (max-width: 767px) {
+  .intro--options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .intro--options a {
+    flex: 0 0 50%; /* Two items per row in mobile view */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center; /* Center align text */
+  }
+
+  .intro--options h3 {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .intro--options p {
+    font-size: 14px;
+    margin: 0;
+  }
+}
